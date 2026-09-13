@@ -231,14 +231,13 @@ int main() {
 Задание 17
 
 #include <iostream>
-using namespce std;
+using namespace std;
 
 int main() {
-    int a=2, b=3, c=4;
+    int a=2, b=3, c=4, result;
     result = a + (b * c) - ((a / b) % c);
     cout << result << endl;
 }
-
 
 Задание 18
 
