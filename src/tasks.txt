@@ -1,9 +1,14 @@
+Задание 1
+
 #include <iostream>
 using namespace std;
 int main() {
     int a = 17, b = 5;
     cout << a + b << endl << a - b << endl << a * b << endl << a / b << endl << a % b << endl;
 }
+
+
+Задание 2
 
 #include <iostream>
 using namespace std;
@@ -13,17 +18,9 @@ int main(){
     cout << "Результат деления целых чисел: " << (int)7/(int)2 << endl;
 }
 
-Задание 1 (Арифметические операторы)
-Объявите целые переменные a=17, b=5. Вычислите и выведите сумму, разность, произведение, частное (целочисленное) и остаток от деления.
-Важно: частное от деления целых чисел — это целочисленное деление (дробная часть отбрасывается). Остаток от деления вычисляется оператором %.
 
-Задание 2 (Деление вещественных)
-Объявите double d1=7.0, d2=2.0. Выведите результат деления d1/d2. Сравните с целочисленным делением (int)7/(int)2.
-Важно: если хотя бы один операнд вещественный, результат будет вещественным. При целочисленном делении дробная часть отбрасывается.
+Задание 3
 
-Задание 3 (Составные операторы)
-Дано int x = 10. Последовательно примените x += 5, x -= 3, x *= 2, x /= 4, x %= 3. Выведите значение x после каждой операции.
-Важно: составные операторы вида x += y эквивалентны x = x + y.
 #include <iostream>
 using namespace std;
 
@@ -42,9 +39,7 @@ int main() {
 }
 
 
-Задание 4 (Префиксный и постфиксный инкремент)
-Объявите int a=5, b=5. Вычислите c = ++a и d = b++. Выведите a, b, c, d. В комментариях объясните разницу.
-Важно: префиксный ++a сначала увеличивает a, затем возвращает новое значение. Постфиксный b++ сначала возвращает текущее значение b, затем увеличивает b.
+Задание 4
 
 #include <iostream>
 using namespace std;
@@ -55,9 +50,7 @@ int main() {
     cout << a << ", " << b << ", " << c << ", " << d << endl;
 }
 
-Задание 5 (Декремент в цикле)
-Напишите цикл for с использованием постфиксного декремента n-- для вывода чисел от 10 до 1.
-Важно: в условии цикла используйте n > 0. Постфиксный декремент уменьшает переменную после использования её текущего значения.
+Задание 5
 
 #include <iostream>
 using namespace std;
@@ -68,9 +61,8 @@ int main() {
     }
 }
 
-Задание 6 (Операторы сравнения)
-Даны int a=8, b=12, c=20. Выведите результат каждого выражения: (a < b), (a == c), (b * 2 >= c), (c - a != b), (a + b <= c).
-Важно: операторы сравнения возвращают true (1) или false (0). В C++ true выводится как 1, false как 0.
+
+Задание 6
 
 #include <iostream>
 using namespace std;
@@ -80,9 +72,8 @@ int main() {
     cout << a < b << endl << a == c << endl << b * 2 >= 3 << endl << c - a != b << endl << a + b <= c << endl;
 } 
 
-Задание 7 (Логические операторы)
-Для int a=5, b=10, c=15 вычислите: (a < b) && (b < c), (a > b) || (b < c), !((a + b) == c), (a == 5) && (b != 10) || (c == 15).
-Важно: && (И) возвращает true только если оба операнда true. || (ИЛИ) возвращает true если хотя бы один операнд true. ! (НЕ) инвертирует значение. Приоритет: ! > && > ||.
+
+Задание 7
 
 #include <iostream>
 using namespace std;
@@ -92,9 +83,8 @@ int main() {
     cout << ((a < b) && (b < c)) << endl << ((a > b) || (b < c)) << endl << (!((a + b) == c)) << endl << ((a == 5) && (b != 10) || (c == 15)) << endl;
 }
 
-Задание 8 (Тернарный оператор)
-Запросите у пользователя два числа. Используя тернарный оператор, выведите максимальное из них.
-Важно: тернарный оператор имеет вид (условие) ? значение_если_true : значение_если_false. Для ввода используйте cin >>.
+
+Задание 8
 
 #include <iostream>
 using namespace std;
@@ -105,9 +95,8 @@ int main() {
     cout << ((a > b) ? a : b) << endl;
 }
 
-Задание 9 (Тернарный оператор со строкой)
-Дано int age = 20. Используя тернарный оператор, присвойте переменной string status значение "Совершеннолетний" или "Несовершеннолетний" и выведите её.
-Важно: подключите #include <string> для работы со string. Тернарный оператор может возвращать значения любого типа.
+
+Задание 9
 
 #include <iostream>
 #include <string>
@@ -119,9 +108,8 @@ int main() {
     cout << status << endl;
 }
 
-Задание 10 (Оператор запятая)
-Выполните фрагмент: c = (a = 5, b = 7, a + b); Выведите a, b, c. Объясните в комментариях работу оператора запятая.
-Важно: оператор запятая выполняет все выражения по порядку и возвращает значение последнего. В данном примере c получит значение a + b (то есть 12).
+
+Задание 10
 
 #include <iostream>
 using namespace std;
@@ -132,9 +120,8 @@ int main() {
     cout << a << endl << b << endl << c << endl;
 }
 
-Задание 11 (sizeof для всех типов)
-Выведите размер в байтах для всех типов: char, char16_t, char32_t, wchar_t, signed char, signed short int, signed int, signed long int, signed long long int, unsigned char, unsigned short int, unsigned int, unsigned long int, unsigned long long int, float, double, long double.
-Важно: sizeof возвращает размер в байтах. Размеры типов зависят от платформы (например, int обычно 4 байта, но может быть и другим). char всегда занимает 1 байт.
+
+Задание 11
 
 #include <iostream>
 using namespace std;
@@ -159,9 +146,8 @@ int main() {
     cout << "long double: "        << sizeof(long double)        << " байт" << endl;
 }
 
-Задание 12 (sizeof для переменной)
-Объявите переменные каждого типа: int, double, char, bool. Выведите размер каждой с помощью sizeof. Выведите размер выражения (a + b), где a и b — целые переменные.
-Важно: sizeof можно применять как к типам (sizeof(int)), так и к переменным (sizeof(a)) и выражениям (sizeof(a + b)).
+
+Задание 12
 
 #include <iostream>
 using namespace std;
@@ -186,9 +172,8 @@ int main() {
     cout << "sizeof(a + e) = " << sizeof(a + e) << endl; // тип int
 }
 
-Задание 13 (Приведение типа C-style)
-Дано double pi = 3.14159. Выполните приведение двумя способами: int pi_int = (int)pi; и int pi_int2 = int(pi); Выведите оба результата.
-Важно: при приведении double к int дробная часть отбрасывается (не округляется!). Оба способа эквивалентны.
+
+Задание 13
 
 #include <iostream>
 using namespace std;
@@ -203,9 +188,8 @@ int main() {
     cout << "int(pi) = " << pi_int2 << endl;
 }
 
-Задание 14 (Приведение с потерей данных)
-Объявите float f = 9.99. Приведите к int, а затем к char. Выведите все три значения.
-Важно: при приведении float к int дробная часть отбрасывается. При приведении int к char (если значение > 127) происходит переполнение, и результат может быть неожиданным (берётся младший байт).
+
+Задание 14
 
 #include <iostream>
 using namespace std;
@@ -214,40 +198,143 @@ int main() {
     float f = 9.99f;
     int i = (int)f;
     char c = (char)i;
-
+    
     cout << "float f = " << f << endl;
     cout << "int i = " << i << endl;
     cout << "char c = " << (int)c << endl;
 }
 
-Задание 15 (Оператор взятия адреса)
-Объявите int var = 42. Выведите значение var и его адрес с помощью &var.
-Важно: оператор & возвращает адрес переменной в памяти. Адрес выводится в шестнадцатеричном формате.
+
+Задание 15
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int var = 42;
+    cout << &var << endl;
+}
 
 
+Задание 16
 
-Задание 16 (Комбинированное выражение)
-Дано int x=5, y=10, z=0. Вычислите: z = (x += 3) * (y -= 2) + (++x) - (y--); Выведите x, y, z и объясните порядок вычислений.
-Важно: выражения вычисляются слева направо внутри скобок. Операторы += и -= изменяют переменные. Префиксный ++x увеличивает x до использования, постфиксный y-- использует текущее y, затем уменьшает его.
+#include <iostream>
+using namespace std;
 
-Задание 17 (Приоритет операторов)
-Расставьте скобки в выражении так, чтобы оно было эквивалентно исходному, и выведите результат: int a=2, b=3, c=4; int result = a + b * c - a / b % c;
-Важно: приоритет операторов: * / % выполняются раньше чем + -. * и % имеют одинаковый приоритет и выполняются слева направо.
+int main() {
+    int x=5, y=10, z=0;
+    z = (x += 3) * (y -= 2) + (++x) - (y--);
+    cout << x << endl << y << endl << z << endl;
+}
 
-Задание 18 (Целочисленные типы)
-Объявите переменные всех целочисленных типов: signed char, short, int, long, long long и их беззнаковые аналоги. Присвойте им максимальные значения, используя константы из <climits>. Выведите их на экран.
-Важно: подключите #include <climits>. Для signed char и unsigned char при выводе приводите к (int), иначе они будут выведены как символы. Беззнаковые типы хранят только положительные числа, их максимум примерно в 2 раза больше, чем у знаковых.
 
-(Вещественные типы)
-Объявите float, double, long double. Присвойте им значение 1.0/3.0. Выведите с разной точностью, используя cout.precision(). Сравните результаты.
-Важно: используйте cout.precision(15) и cout << fixed для управления выводом. Разные типы имеют разную точность: float ~7 знаков, double ~15, long double ~18-19. Точность вывода задаётся глобально для cout.
+Задание 17
 
-Задание 20 (Символьные и логический типы)
-Объявите char ch = 'A', char16_t u16 = u'B', char32_t u32 = U'C', wchar_t w = L'D', bool flag = true. Выведите их значения. Для bool используйте boolalpha. Также выведите их числовые коды, приведя к int.
-Важно: для вывода bool как true/false используйте cout << boolalpha. Префиксы u, U, L перед кавычками указывают на тип символьной константы. char выводится как символ, но при приведении к int покажет его ASCII-код.
+#include <iostream>
+using namespce std;
 
-Задание 21 (Итоговое комбинированное)
-Напишите программу, которая запрашивает у пользователя целое число, дробное число и символ. Сохраните их в переменные. Используя приведение, переведите дробное в целое, а символ в целочисленный код. Выведите сумму целого и приведённого дробного, разность целого и кода символа, результат сравнения между исходным целым и приведённым дробным, логическое выражение (целое > 10) && (код символа < 100), а также размер каждого типа через sizeof.
-Важно: используйте cin >> для ввода. Для вывода bool как true/false используйте cout << boolalpha. При приведении double к int дробная часть отбрасывается, а не округляется. Размеры типов можно получить через sizeof(переменная
+int main() {
+    int a=2, b=3, c=4;
+    result = a + (b * c) - ((a / b) % c);
+    cout << result << endl;
+}
 
- 
+
+Задание 18
+
+#include <iostream>
+#include <climits>
+using namespace std;
+
+int main() {
+    signed char sc = SCHAR_MAX;
+    unsigned char uc = UCHAR_MAX;
+    short s   = SHRT_MAX;
+    unsigned short us = USHRT_MAX;
+    int i = INT_MAX;
+    unsigned int ui = UINT_MAX;
+    long l = LONG_MAX;
+    unsigned long ul = ULONG_MAX;
+    long long ll = LLONG_MAX;
+    unsigned long long ull = ULLONG_MAX;
+
+    cout << "signed char max = " << (int)sc << endl;
+    cout << "unsigned char max = " << (int)uc << endl;
+    cout << "short max = " << s << endl;
+    cout << "unsigned short max= " << us << endl;
+    cout << "int max = " << i << endl;
+    cout << "unsigned int max = " << ui << endl;
+    cout << "long max = " << l << endl;
+    cout << "unsigned long max = " << ul << endl;
+    cout << "long long max = " << ll << endl;
+    cout << "unsigned long long max = " << ull << endl;
+}
+
+
+Задание 19
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float f = 1.0 / 3.0;
+    double d = 1.0 / 3.0;
+    long double ld = 1.0 / 3.0;
+
+    cout.precision(15);
+    cout << fixed;
+
+    cout << "float = " << f << endl;
+    cout << "double = " << d << endl;
+    cout << "long double = " << ld << endl;
+}
+
+
+Задание 20
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch  = 'A';
+    char16_t u16 = u'B';
+    char32_t u32 = U'C';
+    wchar_t w = L'D';
+    bool flag = true;
+
+    cout << boolalpha;
+
+    cout << "char ch = " << ch  << ", код = " << (int)ch << endl;
+    cout << "char16_t u16 = " << (int)u16 << endl;
+    cout << "char32_t u32 = " << (int)u32 << endl;
+    cout << "wchar_t w = " << (int)w << endl;
+    cout << "bool flag = " << flag << endl;
+}
+
+
+Задание 21
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i;
+    double d;
+    char c;
+
+    cin >> i >> d >> c;
+
+    int d_int   = (int)d;
+    int c_code  = (int)c;
+
+    cout << boolalpha;
+
+    cout << i + d_int << endl;
+    cout << i - c_code << endl;
+    cout << (i == d_int) << endl;
+    cout << ((i > 10) && (c_code < 100)) << endl;
+
+    cout << "sizeof(int) = " << sizeof(i) << endl;
+    cout << "sizeof(double) = " << sizeof(d) << endl;
+    cout << "sizeof(char) = " << sizeof(c) << endl;
+}
