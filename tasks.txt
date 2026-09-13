@@ -1,0 +1,340 @@
+Задание 1
+
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 17, b = 5;
+    cout << a + b << endl << a - b << endl << a * b << endl << a / b << endl << a % b << endl;
+}
+
+
+Задание 2
+
+#include <iostream>
+using namespace std;
+int main(){
+    double d1 = 7.0, d2 = 2.0;
+    cout << "Результат деления вещественных чисел: " << d1/d2 << endl;
+    cout << "Результат деления целых чисел: " << (int)7/(int)2 << endl;
+}
+
+
+Задание 3
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 10;
+    x += 5;
+    cout << x << endl;
+    x -= 3;
+    cout << x << endl;
+    x *= 2;
+    cout << x << endl;
+    x /= 4;
+    cout << x << endl;
+    x %= 3;
+    cout << x << endl;
+}
+
+
+Задание 4
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5, b = 5, c, d;
+    c = ++a, d = b++;   //префиксный ++a сначала увеличивает a, затем возвращает новое значение. Постфиксный b++ сначала возвращает текущее значение b, затем увеличивает b.
+    cout << a << ", " << b << ", " << c << ", " << d << endl;
+}
+
+Задание 5
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    for (int i = 10; i > 0; i--) {
+        cout << i << endl;
+    }
+}
+
+
+Задание 6
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 8, b = 12, c = 20;
+    cout << a < b << endl << a == c << endl << b * 2 >= 3 << endl << c - a != b << endl << a + b <= c << endl;
+} 
+
+
+Задание 7
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 5, b = 10, c = 15;
+    cout << ((a < b) && (b < c)) << endl << ((a > b) || (b < c)) << endl << (!((a + b) == c)) << endl << ((a == 5) && (b != 10) || (c == 15)) << endl;
+}
+
+
+Задание 8
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    cin >> a >> b;
+    cout << ((a > b) ? a : b) << endl;
+}
+
+
+Задание 9
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int age = 20;
+    string status = ((age < 18) ? "Несовершеннолетний" : "Совершеннолетний");
+    cout << status << endl;
+}
+
+
+Задание 10
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c;
+    c = (a = 5, b = 7, a + b);  //оператор запятая выполняет все выражения по порядку и возвращает значение последнего.
+    cout << a << endl << b << endl << c << endl;
+}
+
+
+Задание 11
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "char: "               << sizeof(char)               << " байт" << endl;
+    cout << "char16_t: "           << sizeof(char16_t)           << " байт" << endl;
+    cout << "char32_t: "           << sizeof(char32_t)           << " байт" << endl;
+    cout << "wchar_t: "            << sizeof(wchar_t)            << " байт" << endl;
+    cout << "signed char: "        << sizeof(signed char)        << " байт" << endl;
+    cout << "signed short int: "   << sizeof(signed short int)   << " байт" << endl;
+    cout << "signed int: "         << sizeof(signed int)         << " байт" << endl;
+    cout << "signed long int: "    << sizeof(signed long int)    << " байт" << endl;
+    cout << "signed long long int: "<< sizeof(signed long long int) << " байт" << endl;
+    cout << "unsigned char: "      << sizeof(unsigned char)      << " байт" << endl;
+    cout << "unsigned short int: " << sizeof(unsigned short int) << " байт" << endl;
+    cout << "unsigned int: "       << sizeof(unsigned int)       << " байт" << endl;
+    cout << "unsigned long int: "  << sizeof(unsigned long int)  << " байт" << endl;
+    cout << "unsigned long long int: " << sizeof(unsigned long long int) << " байт" << endl;
+    cout << "float: "              << sizeof(float)              << " байт" << endl;
+    cout << "double: "             << sizeof(double)             << " байт" << endl;
+    cout << "long double: "        << sizeof(long double)        << " байт" << endl;
+}
+
+
+Задание 12
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int    a = 10;
+    double b = 3.14;
+    char   c = 'X';
+    bool   d = true;
+    int    e = 20;
+
+    cout << "sizeof(int)    = " << sizeof(int)    << endl;
+    cout << "sizeof(double) = " << sizeof(double) << endl;
+    cout << "sizeof(char)   = " << sizeof(char)   << endl;
+    cout << "sizeof(bool)   = " << sizeof(bool)   << endl;
+
+    cout << "sizeof(a) = " << sizeof(a) << endl;
+    cout << "sizeof(b) = " << sizeof(b) << endl;
+    cout << "sizeof(c) = " << sizeof(c) << endl;
+    cout << "sizeof(d) = " << sizeof(d) << endl;
+
+    cout << "sizeof(a + e) = " << sizeof(a + e) << endl; // тип int
+}
+
+
+Задание 13
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    double pi = 3.14159;
+    int pi_int = (int)pi;
+    int pi_int2 = int(pi);
+
+    cout << "pi = " << pi << endl;
+    cout << "(int)pi = " << pi_int << endl;
+    cout << "int(pi) = " << pi_int2 << endl;
+}
+
+
+Задание 14
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float f = 9.99f;
+    int i = (int)f;
+    char c = (char)i;
+    
+    cout << "float f = " << f << endl;
+    cout << "int i = " << i << endl;
+    cout << "char c = " << (int)c << endl;
+}
+
+
+Задание 15
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int var = 42;
+    cout << &var << endl;
+}
+
+
+Задание 16
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x=5, y=10, z=0;
+    z = (x += 3) * (y -= 2) + (++x) - (y--);
+    cout << x << endl << y << endl << z << endl;
+}
+
+
+Задание 17
+
+#include <iostream>
+using namespce std;
+
+int main() {
+    int a=2, b=3, c=4;
+    result = a + (b * c) - ((a / b) % c);
+    cout << result << endl;
+}
+
+
+Задание 18
+
+#include <iostream>
+#include <climits>
+using namespace std;
+
+int main() {
+    signed char sc = SCHAR_MAX;
+    unsigned char uc = UCHAR_MAX;
+    short s   = SHRT_MAX;
+    unsigned short us = USHRT_MAX;
+    int i = INT_MAX;
+    unsigned int ui = UINT_MAX;
+    long l = LONG_MAX;
+    unsigned long ul = ULONG_MAX;
+    long long ll = LLONG_MAX;
+    unsigned long long ull = ULLONG_MAX;
+
+    cout << "signed char max = " << (int)sc << endl;
+    cout << "unsigned char max = " << (int)uc << endl;
+    cout << "short max = " << s << endl;
+    cout << "unsigned short max= " << us << endl;
+    cout << "int max = " << i << endl;
+    cout << "unsigned int max = " << ui << endl;
+    cout << "long max = " << l << endl;
+    cout << "unsigned long max = " << ul << endl;
+    cout << "long long max = " << ll << endl;
+    cout << "unsigned long long max = " << ull << endl;
+}
+
+
+Задание 19
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float f = 1.0 / 3.0;
+    double d = 1.0 / 3.0;
+    long double ld = 1.0 / 3.0;
+
+    cout.precision(15);
+    cout << fixed;
+
+    cout << "float = " << f << endl;
+    cout << "double = " << d << endl;
+    cout << "long double = " << ld << endl;
+}
+
+
+Задание 20
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch  = 'A';
+    char16_t u16 = u'B';
+    char32_t u32 = U'C';
+    wchar_t w = L'D';
+    bool flag = true;
+
+    cout << boolalpha;
+
+    cout << "char ch = " << ch  << ", код = " << (int)ch << endl;
+    cout << "char16_t u16 = " << (int)u16 << endl;
+    cout << "char32_t u32 = " << (int)u32 << endl;
+    cout << "wchar_t w = " << (int)w << endl;
+    cout << "bool flag = " << flag << endl;
+}
+
+
+Задание 21
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i;
+    double d;
+    char c;
+
+    cin >> i >> d >> c;
+
+    int d_int   = (int)d;
+    int c_code  = (int)c;
+
+    cout << boolalpha;
+
+    cout << i + d_int << endl;
+    cout << i - c_code << endl;
+    cout << (i == d_int) << endl;
+    cout << ((i > 10) && (c_code < 100)) << endl;
+
+    cout << "sizeof(int) = " << sizeof(i) << endl;
+    cout << "sizeof(double) = " << sizeof(d) << endl;
+    cout << "sizeof(char) = " << sizeof(c) << endl;
+}
